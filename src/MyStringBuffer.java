@@ -38,7 +38,8 @@ public class MyStringBuffer implements IStringBuffer {
     @Override
     //在指定位置插入字符串
     public void insert(int pos, String b) {
-
+        if (pos < 0 || pos > length || b == null)
+            return;
     }
 
     @Override
